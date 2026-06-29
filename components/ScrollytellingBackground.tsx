@@ -33,14 +33,12 @@ export default function ScrollytellingBackground() {
 
       img.onload = () => {
         loaded++;
-        setLoadedFrames(loaded);
         checkCompletion();
       };
       
       // In case of error (e.g. dummy images not found), we still want to progress
       img.onerror = () => {
         loaded++;
-        setLoadedFrames(loaded);
         checkCompletion();
       };
 
