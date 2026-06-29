@@ -10,9 +10,9 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-end pt-16 bg-transparent overflow-hidden">
-        <div className="relative z-10 px-margin-mobile md:px-margin-desktop pb-16 md:pb-section-gap flex flex-col gap-unit-4 max-w-3xl">
-          <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-secondary-fixed tracking-tight drop-shadow-md">The Art of Serenity.</h1>
-          <p className="font-body-lg text-body-lg text-primary-fixed max-w-xs drop-shadow-sm">Bespoke beauty rituals designed for the modern soul.</p>
+        <div className="relative z-10 px-margin-mobile md:px-margin-desktop pb-16 md:pb-section-gap flex flex-col gap-unit-4 max-w-4xl">
+          <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-7xl lg:text-8xl text-secondary-fixed tracking-tight drop-shadow-2xl text-pop">The Art of Serenity.</h1>
+          <p className="font-body-lg text-xl md:text-2xl text-primary-fixed max-w-md drop-shadow-2xl text-pop">Bespoke beauty rituals designed for the modern soul.</p>
           <div className="mt-gutter">
             <button className="bg-secondary-fixed text-primary px-8 py-4 rounded-lg font-label-md text-label-md shadow-xl hover:scale-[1.02] active:scale-[0.98] transition-all duration-300">
               Book Appointment
@@ -24,7 +24,7 @@ export default function Home() {
       {/* Services Menu */}
       <section className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-transparent rounded-t-[40px] max-w-7xl mx-auto w-full">
         <div className="text-center mb-16 md:mb-section-gap">
-          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary drop-shadow-md">Curation of Care</h2>
+          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-5xl text-primary text-pop">Curation of Care</h2>
           <div className="gold-divider mt-4 mx-auto w-24"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -78,7 +78,7 @@ export default function Home() {
                   <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                   <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
                 </div>
-                <p className="font-body-lg text-body-lg text-on-surface-variant italic drop-shadow-sm max-w-2xl text-center">
+                <p className="font-body-lg text-xl md:text-2xl text-on-surface-variant italic drop-shadow-md max-w-2xl text-center font-semibold">
                   "Divine Studio is my sanctuary. The meticulous attention to detail and organic products they use are unmatched. I leave feeling rejuvenated every single time."
                 </p>
                 <p className="font-label-md text-label-md text-primary mt-2 uppercase tracking-widest drop-shadow-md">- Sarah J.</p>
@@ -91,7 +91,7 @@ export default function Home() {
       {/* Pricing / Packages */}
       <section className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-transparent rounded-t-[40px] max-w-5xl mx-auto w-full">
         <div className="text-center mb-16 md:mb-section-gap">
-          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary drop-shadow-md">Signature Packages</h2>
+          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-5xl text-primary text-pop">Signature Packages</h2>
           <div className="gold-divider mt-4 mx-auto w-24"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

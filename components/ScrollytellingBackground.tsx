@@ -156,21 +156,7 @@ export default function ScrollytellingBackground() {
 
   return (
     <>
-      {/* Loading Overlay */}
-      {!isLoaded && (
-        <div ref={overlayRef} className="fixed inset-0 z-[100] flex items-center justify-center bg-black text-white flex-col gap-4">
-          <h1 className="font-display-lg text-display-lg tracking-widest text-gold-500">Divine Studio</h1>
-          <p className="font-label-md text-label-md tracking-[0.2em] opacity-70">
-            LOADING EXPERIENCE {loadingPercentage}%
-          </p>
-          <div className="w-64 h-1 bg-white/20 rounded-full overflow-hidden mt-4">
-            <div 
-              className="h-full bg-gold-500 transition-all duration-300 ease-out"
-              style={{ width: `${loadingPercentage}%` }}
-            />
-          </div>
-        </div>
-      )}
+      {/* Loading Overlay Removed per user request */}
 
       {/* Scrollytelling Canvas Container */}
       <div 
