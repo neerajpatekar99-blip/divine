@@ -1,7 +1,6 @@
 import ScrollytellingBackground from "@/components/ScrollytellingBackground";
 import GlassSurface from "@/components/GlassSurface";
 import Header from "@/components/Header";
-import FadeInSection from "@/components/FadeInSection";
 
 export default function Home() {
   return (
@@ -23,105 +22,103 @@ export default function Home() {
       </section>
 
       {/* Services Menu */}
-      <FadeInSection>
-        <section className="py-section-gap px-margin-mobile bg-transparent rounded-t-[40px] max-w-7xl mx-auto w-full">
-          <div className="text-center mb-section-gap">
-            <h2 className="font-headline-lg-mobile text-headline-lg-mobile text-primary drop-shadow-md">Curation of Care</h2>
-            <div className="gold-divider mt-4 mx-auto w-24"></div>
+      <section className="py-section-gap px-margin-mobile bg-transparent rounded-t-[40px] max-w-7xl mx-auto w-full">
+        <div className="text-center mb-section-gap">
+          <h2 className="font-headline-lg-mobile text-headline-lg-mobile text-primary drop-shadow-md">Curation of Care</h2>
+          <div className="gold-divider mt-4 mx-auto w-24"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Service Card 1 */}
+          <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <GlassSurface width="100%" height="auto" className="rounded-xl signature-shadow border border-secondary/10">
+              <div className="p-8 flex flex-col gap-unit-4 h-full relative z-10">
+                <span className="material-symbols-outlined text-secondary text-4xl">content_cut</span>
+                <h3 className="font-headline-md text-headline-md text-primary">Hair Artistry</h3>
+                <p className="font-body-md text-body-md text-on-surface-variant">Precision cutting and bespoke coloring tailored to your unique structure.</p>
+                <button className="text-secondary font-label-md text-label-md flex items-center gap-2 mt-2 group-hover:translate-x-1 transition-transform">Discover <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
+              </div>
+            </GlassSurface>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Service Card 1 */}
-            <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <GlassSurface width="100%" height="auto" className="rounded-xl signature-shadow border border-secondary/10">
-                <div className="p-8 flex flex-col gap-unit-4 h-full relative z-10">
-                  <span className="material-symbols-outlined text-secondary text-4xl">content_cut</span>
-                  <h3 className="font-headline-md text-headline-md text-primary">Hair Artistry</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant">Precision cutting and bespoke coloring tailored to your unique structure.</p>
-                  <button className="text-secondary font-label-md text-label-md flex items-center gap-2 mt-2 group-hover:translate-x-1 transition-transform">Discover <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
-                </div>
-              </GlassSurface>
-            </div>
-            {/* Service Card 2 */}
-            <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <GlassSurface width="100%" height="auto" className="rounded-xl signature-shadow border border-secondary/10">
-                <div className="p-8 flex flex-col gap-unit-4 h-full relative z-10">
-                  <span className="material-symbols-outlined text-secondary text-4xl">auto_awesome_motion</span>
-                  <h3 className="font-headline-md text-headline-md text-primary">Nail Lounge</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant">Manicure rituals using non-toxic pigments for a high-gloss, healthy finish.</p>
-                  <button className="text-secondary font-label-md text-label-md flex items-center gap-2 mt-2 group-hover:translate-x-1 transition-transform">Discover <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
-                </div>
-              </GlassSurface>
-            </div>
-            {/* Service Card 3 */}
-            <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <GlassSurface width="100%" height="auto" className="rounded-xl signature-shadow border border-secondary/10">
-                <div className="p-8 flex flex-col gap-unit-4 h-full relative z-10">
-                  <span className="material-symbols-outlined text-secondary text-4xl">spa</span>
-                  <h3 className="font-headline-md text-headline-md text-primary">Spa Retreat</h3>
-                  <p className="font-body-md text-body-md text-on-surface-variant">Deep-tissue therapy and hydro-facials within our soundproof sanctuary.</p>
-                  <button className="text-secondary font-label-md text-label-md flex items-center gap-2 mt-2 group-hover:translate-x-1 transition-transform">Discover <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
-                </div>
-              </GlassSurface>
-            </div>
+          {/* Service Card 2 */}
+          <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <GlassSurface width="100%" height="auto" className="rounded-xl signature-shadow border border-secondary/10">
+              <div className="p-8 flex flex-col gap-unit-4 h-full relative z-10">
+                <span className="material-symbols-outlined text-secondary text-4xl">auto_awesome_motion</span>
+                <h3 className="font-headline-md text-headline-md text-primary">Nail Lounge</h3>
+                <p className="font-body-md text-body-md text-on-surface-variant">Manicure rituals using non-toxic pigments for a high-gloss, healthy finish.</p>
+                <button className="text-secondary font-label-md text-label-md flex items-center gap-2 mt-2 group-hover:translate-x-1 transition-transform">Discover <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
+              </div>
+            </GlassSurface>
           </div>
-        </section>
-      </FadeInSection>
+          {/* Service Card 3 */}
+          <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <GlassSurface width="100%" height="auto" className="rounded-xl signature-shadow border border-secondary/10">
+              <div className="p-8 flex flex-col gap-unit-4 h-full relative z-10">
+                <span className="material-symbols-outlined text-secondary text-4xl">spa</span>
+                <h3 className="font-headline-md text-headline-md text-primary">Spa Retreat</h3>
+                <p className="font-body-md text-body-md text-on-surface-variant">Deep-tissue therapy and hydro-facials within our soundproof sanctuary.</p>
+                <button className="text-secondary font-label-md text-label-md flex items-center gap-2 mt-2 group-hover:translate-x-1 transition-transform">Discover <span className="material-symbols-outlined text-sm">arrow_forward</span></button>
+              </div>
+            </GlassSurface>
+          </div>
+        </div>
+      </section>
 
       {/* Testimonials */}
-      <FadeInSection delay={0.2}>
-        <section className="py-section-gap px-margin-mobile bg-transparent text-center max-w-4xl mx-auto w-full">
-          <span className="material-symbols-outlined text-secondary text-5xl mb-unit drop-shadow-md">format_quote</span>
-          <div className="flex flex-col gap-gutter overflow-x-auto pb-gutter no-scrollbar snap-x snap-mandatory">
-            <div className="min-w-full flex flex-col gap-unit-4 px-4 snap-center">
-              <div className="flex justify-center gap-1 text-secondary drop-shadow-md">
-                <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
-                <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+      <section className="py-section-gap px-margin-mobile bg-transparent text-center max-w-4xl mx-auto w-full">
+        <span className="material-symbols-outlined text-secondary text-5xl mb-unit drop-shadow-md">format_quote</span>
+        <div className="flex flex-col gap-gutter overflow-x-auto pb-gutter no-scrollbar snap-x snap-mandatory">
+          <div className="min-w-full flex flex-col gap-unit-4 px-4 snap-center">
+            <GlassSurface width="100%" height="auto" className="rounded-xl border border-secondary/10">
+              <div className="p-8 flex flex-col gap-unit-4 relative z-10 items-center">
+                <div className="flex justify-center gap-1 text-secondary drop-shadow-md">
+                  <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                  <span className="material-symbols-outlined text-sm" style={{ fontVariationSettings: "'FILL' 1" }}>star</span>
+                </div>
+                <p className="font-body-lg text-body-lg text-on-surface-variant italic drop-shadow-sm max-w-2xl text-center">
+                  "Divine Studio is my sanctuary. The meticulous attention to detail and organic products they use are unmatched. I leave feeling rejuvenated every single time."
+                </p>
+                <p className="font-label-md text-label-md text-primary mt-2 uppercase tracking-widest drop-shadow-md">- Sarah J.</p>
               </div>
-              <p className="font-body-lg text-body-lg text-on-background italic drop-shadow-lg">
-                "Divine Studio is my sanctuary. The meticulous attention to detail and organic products they use are unmatched. I leave feeling rejuvenated every single time."
-              </p>
-              <p className="font-label-md text-label-md text-primary mt-2 uppercase tracking-widest drop-shadow-md">- Sarah J.</p>
-            </div>
+            </GlassSurface>
           </div>
-        </section>
-      </FadeInSection>
+        </div>
+      </section>
 
       {/* Pricing / Packages */}
-      <FadeInSection delay={0.1}>
-        <section className="py-section-gap px-margin-mobile bg-transparent rounded-t-[40px] max-w-5xl mx-auto w-full">
-          <div className="text-center mb-section-gap">
-            <h2 className="font-headline-lg-mobile text-headline-lg-mobile text-primary drop-shadow-md">Signature Packages</h2>
-            <div className="gold-divider mt-4 mx-auto w-24"></div>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <GlassSurface width="100%" height="auto" className="rounded-xl border border-secondary/10">
-                 <div className="p-6 flex flex-col justify-between items-start h-full relative z-10">
-                   <div>
-                     <h3 className="font-headline-md text-headline-md text-primary mb-2 group-hover:text-gold-400 transition-colors">The Divine Glow</h3>
-                     <p className="font-body-md text-body-md text-on-surface-variant">Includes signature haircut, glossing treatment, and a 30-min scalp massage.</p>
-                   </div>
-                   <p className="font-display-lg-mobile text-display-lg-mobile text-secondary mt-4">$150</p>
+      <section className="py-section-gap px-margin-mobile bg-transparent rounded-t-[40px] max-w-5xl mx-auto w-full">
+        <div className="text-center mb-section-gap">
+          <h2 className="font-headline-lg-mobile text-headline-lg-mobile text-primary drop-shadow-md">Signature Packages</h2>
+          <div className="gold-divider mt-4 mx-auto w-24"></div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <GlassSurface width="100%" height="auto" className="rounded-xl border border-secondary/10">
+               <div className="p-6 flex flex-col justify-between items-start h-full relative z-10">
+                 <div>
+                   <h3 className="font-headline-md text-headline-md text-primary mb-2 group-hover:text-gold-400 transition-colors">The Divine Glow</h3>
+                   <p className="font-body-md text-body-md text-on-surface-variant">Includes signature haircut, glossing treatment, and a 30-min scalp massage.</p>
                  </div>
-              </GlassSurface>
-            </div>
-            <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
-              <GlassSurface width="100%" height="auto" className="rounded-xl border border-secondary/10">
-                 <div className="p-6 flex flex-col justify-between items-start h-full relative z-10">
-                   <div>
-                     <h3 className="font-headline-md text-headline-md text-primary mb-2 group-hover:text-gold-400 transition-colors">Opulent Oasis</h3>
-                     <p className="font-body-md text-body-md text-on-surface-variant">Full body deep tissue massage, gold-leaf facial, and aromatherapy.</p>
-                   </div>
-                   <p className="font-display-lg-mobile text-display-lg-mobile text-secondary mt-4">$280</p>
-                 </div>
-              </GlassSurface>
-            </div>
+                 <p className="font-display-lg-mobile text-display-lg-mobile text-secondary mt-4">$150</p>
+               </div>
+            </GlassSurface>
           </div>
-        </section>
-      </FadeInSection>
+          <div className="group transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
+            <GlassSurface width="100%" height="auto" className="rounded-xl border border-secondary/10">
+               <div className="p-6 flex flex-col justify-between items-start h-full relative z-10">
+                 <div>
+                   <h3 className="font-headline-md text-headline-md text-primary mb-2 group-hover:text-gold-400 transition-colors">Opulent Oasis</h3>
+                   <p className="font-body-md text-body-md text-on-surface-variant">Full body deep tissue massage, gold-leaf facial, and aromatherapy.</p>
+                 </div>
+                 <p className="font-display-lg-mobile text-display-lg-mobile text-secondary mt-4">$280</p>
+               </div>
+            </GlassSurface>
+          </div>
+        </div>
+      </section>
 
       {/* Footer Contact */}
       <footer className="py-section-gap px-margin-mobile bg-black/90 backdrop-blur-xl text-surface-container-lowest flex flex-col gap-gutter">
