@@ -10,7 +10,7 @@ export default function Home() {
       
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col justify-end pt-16 bg-transparent overflow-hidden">
-        <div className="relative z-10 px-margin-mobile pb-section-gap flex flex-col gap-unit-4 max-w-3xl">
+        <div className="relative z-10 px-margin-mobile md:px-margin-desktop pb-16 md:pb-section-gap flex flex-col gap-unit-4 max-w-3xl">
           <h1 className="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-secondary-fixed tracking-tight drop-shadow-md">The Art of Serenity.</h1>
           <p className="font-body-lg text-body-lg text-primary-fixed max-w-xs drop-shadow-sm">Bespoke beauty rituals designed for the modern soul.</p>
           <div className="mt-gutter">
@@ -22,9 +22,9 @@ export default function Home() {
       </section>
 
       {/* Services Menu */}
-      <section className="py-section-gap px-margin-mobile bg-transparent rounded-t-[40px] max-w-7xl mx-auto w-full">
-        <div className="text-center mb-section-gap">
-          <h2 className="font-headline-lg-mobile text-headline-lg-mobile text-primary drop-shadow-md">Curation of Care</h2>
+      <section className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-transparent rounded-t-[40px] max-w-7xl mx-auto w-full">
+        <div className="text-center mb-16 md:mb-section-gap">
+          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary drop-shadow-md">Curation of Care</h2>
           <div className="gold-divider mt-4 mx-auto w-24"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -65,7 +65,7 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-section-gap px-margin-mobile bg-transparent text-center max-w-4xl mx-auto w-full">
+      <section className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-transparent text-center max-w-4xl mx-auto w-full">
         <span className="material-symbols-outlined text-secondary text-5xl mb-unit drop-shadow-md">format_quote</span>
         <div className="flex flex-col gap-gutter overflow-x-auto pb-gutter no-scrollbar snap-x snap-mandatory">
           <div className="min-w-full flex flex-col gap-unit-4 px-4 snap-center">
@@ -89,9 +89,9 @@ export default function Home() {
       </section>
 
       {/* Pricing / Packages */}
-      <section className="py-section-gap px-margin-mobile bg-transparent rounded-t-[40px] max-w-5xl mx-auto w-full">
-        <div className="text-center mb-section-gap">
-          <h2 className="font-headline-lg-mobile text-headline-lg-mobile text-primary drop-shadow-md">Signature Packages</h2>
+      <section className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-transparent rounded-t-[40px] max-w-5xl mx-auto w-full">
+        <div className="text-center mb-16 md:mb-section-gap">
+          <h2 className="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-primary drop-shadow-md">Signature Packages</h2>
           <div className="gold-divider mt-4 mx-auto w-24"></div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -121,7 +121,7 @@ export default function Home() {
       </section>
 
       {/* Footer Contact */}
-      <footer className="py-section-gap px-margin-mobile bg-black/90 backdrop-blur-xl text-surface-container-lowest flex flex-col gap-gutter">
+      <footer className="py-16 md:py-section-gap px-margin-mobile md:px-margin-desktop bg-black/90 backdrop-blur-xl text-surface-container-lowest flex flex-col gap-gutter">
         <div>
           <h2 className="font-headline-lg-mobile text-headline-lg-mobile mb-4 text-primary">Visit Us</h2>
           <p className="font-body-md text-body-md opacity-80">123 Luxury Lane, Emerald City, EC 90210</p>
