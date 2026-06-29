@@ -12,8 +12,6 @@ const ZOOM_FACTOR = 1.35;
 export default function ScrollytellingBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
-  const overlayRef = useRef<HTMLDivElement>(null);
-  const [loadedFrames, setLoadedFrames] = useState(0);
   const [isLoaded, setIsLoaded] = useState(false);
   const imagesRef = useRef<HTMLImageElement[]>([]);
 
@@ -24,16 +22,7 @@ export default function ScrollytellingBackground() {
     
     const checkCompletion = () => {
       if (loaded === FRAME_COUNT) {
-        if (overlayRef.current) {
-          gsap.to(overlayRef.current, {
-            opacity: 0,
-            duration: 1,
-            ease: "power2.inOut",
-            onComplete: () => setIsLoaded(true)
-          });
-        } else {
-          setIsLoaded(true);
-        }
+        setIsLoaded(true);
       }
     };
 
@@ -131,7 +120,7 @@ export default function ScrollytellingBackground() {
     };
   }, [isLoaded]);
 
-  // 4. Interactive Mouse Parallax
+      // Interactive Mouse Parallax
   useEffect(() => {
     if (!isLoaded || !containerRef.current) return;
 
@@ -151,8 +140,6 @@ export default function ScrollytellingBackground() {
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, [isLoaded]);
-
-  const loadingPercentage = Math.round((loadedFrames / FRAME_COUNT) * 100);
 
   return (
     <>
